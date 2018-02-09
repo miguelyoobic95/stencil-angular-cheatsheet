@@ -1,0 +1,126 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   script: 'build',
+1 silly flags   args: [] }
+2 verbose rootPath /Users/mmarin/Documents/Projects/stencil-angular-cheatsheet
+3 info version 2.8.0
+4 silly existsSync /Users/mmarin/Documents/Projects/stencil-angular-cheatsheet/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir build [] stencil
+9 silly getExecOpts { cwd: '/Users/mmarin/Documents/Projects/stencil-angular-cheatsheet/packages/stencil' }
+10 error build Errored while running script in '@stencil/starter'
+11 error execute callback with error
+12 error Error: Command failed: npm run build
+12 error npm ERR! code ELIFECYCLE
+12 error npm ERR! errno 1
+12 error npm ERR! @stencil/starter@0.0.1 build: `stencil build --prerender`
+12 error npm ERR! Exit status 1
+12 error npm ERR!
+12 error npm ERR! Failed at the @stencil/starter@0.0.1 build script.
+12 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+12 error
+12 error npm ERR! A complete log of this run can be found in:
+12 error npm ERR!     /Users/mmarin/.npm/_logs/2018-02-09T18_28_37_299Z-debug.log
+12 error
+12 error > @stencil/starter@0.0.1 build /Users/mmarin/Documents/Projects/stencil-angular-cheatsheet/packages/stencil
+12 error > stencil build --prerender
+12 error
+12 error [28:32.8]  @stencil/core v0.4.0 💎
+12 error [28:32.8]  build, app, prod mode, started ...
+12 error [28:32.9]  compile started ...
+12 error [28:37.2]  compile finished in 4.35 s
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 10
+12 error            Duplicate identifier 'describe'.
+12 error
+12 error       L9:  /** If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending. */
+12 error      L10:  declare function pending(reason?: string): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 11
+12 error            Duplicate identifier 'fdescribe'.
+12 error
+12 error      L10:  declare function pending(reason?: string): void;
+12 error      L12:  declare function beforeEach(action: (done: DoneFn) => void, timeout?: number): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 12
+12 error            Duplicate identifier 'xdescribe'.
+12 error
+12 error      L12:  declare function beforeEach(action: (done: DoneFn) => void, timeout?: number): void;
+12 error      L13:  declare function afterEach(action: (done: DoneFn) => void, timeout?: number): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 14
+12 error            Duplicate identifier 'it'.
+12 error
+12 error      L13:  declare function afterEach(action: (done: DoneFn) => void, timeout?: number): void;
+12 error      L15:  declare function beforeAll(action: (done: DoneFn) => void, timeout?: number): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 15
+12 error            Duplicate identifier 'fit'.
+12 error
+12 error      L15:  declare function beforeAll(action: (done: DoneFn) => void, timeout?: number): void;
+12 error      L16:  declare function afterAll(action: (done: DoneFn) => void, timeout?: number): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 16
+12 error            Duplicate identifier 'xit'.
+12 error
+12 error      L15:  declare function beforeAll(action: (done: DoneFn) => void, timeout?: number): void;
+12 error      L16:  declare function afterAll(action: (done: DoneFn) => void, timeout?: number): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 21
+12 error            Duplicate identifier 'beforeEach'.
+12 error
+12 error      L21:  declare function fail(e?: any): void;
+12 error      L22:  /** Action method that should be called when the async work is complete */
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 22
+12 error            Duplicate identifier 'afterEach'.
+12 error
+12 error      L21:  declare function fail(e?: any): void;
+12 error      L22:  /** Action method that should be called when the async work is complete */
+12 error      L23:  interface DoneFn extends Function {
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 24
+12 error            Duplicate identifier 'beforeAll'.
+12 error
+12 error      L23:  interface DoneFn extends Function {
+12 error      L24:      (): void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 25
+12 error            Duplicate identifier 'afterAll'.
+12 error
+12 error      L24:      (): void;
+12 error      L26:      /** fails the spec and indicates that it has completed. If the message is an Error, Error.message is used */
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 27
+12 error            Cannot redeclare block-scoped variable 'expect'.
+12 error
+12 error      L26:      /** fails the spec and indicates that it has completed. If the message is an Error, Error.message is used */
+12 error      L27:      fail: (message?: Error|string) => void;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 49
+12 error            Duplicate identifier 'clock'.
+12 error
+12 error      L48:  function createSpyObj<T>(baseName: string, methodNames: any[]): T;
+12 error      L49:  function pp(value: any): string;
+12 error      L50:  function getEnv(): Env;
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 77
+12 error            Duplicate number index signature.
+12 error
+12 error      L78:      interface ObjectContaining {
+12 error
+12 error [ ERROR ]  typescript: ...ments/Projects/stencil-angular-cheatsheet/node_modules/@types/jasmine/index.d.ts, line: 118
+12 error            Duplicate identifier 'CustomEqualityTester'.
+12 error
+12 error     L118:      interface CustomMatcherFactory {
+12 error     L119:          (util: MatchersUtil, customEqualityTesters: Array<CustomEqualityTester>): CustomMatcher;
+12 error
+12 error [28:37.2]  build failed in 4.38 s
+12 error
+12 error
+12 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+12 error     at <anonymous>
